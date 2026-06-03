@@ -44,6 +44,21 @@
             <artifactId>eclair-core_${scala.version.short}</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <!-- eclair-core test helpers -->
+        <dependency>
+            <groupId>fr.acinq.eclair</groupId>
+            <artifactId>eclair-core_${scala.version.short}</artifactId>
+            <classifier>tests</classifier>
+            <version>${project.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-testkit_${scala.version.short}</artifactId>
+            <version>${akka.version}</version>
+            <scope>test</scope>
+        </dependency>
         <!-- Jazzer fuzz testing -->
         <dependency>
             <groupId>com.code-intelligence</groupId>
